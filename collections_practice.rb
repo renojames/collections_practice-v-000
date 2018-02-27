@@ -54,5 +54,5 @@ def add_s(array)
   array.each do |i|
     array_plurals << (i << "s")
   end
-  end
+  array_plurals
 end
