@@ -34,3 +34,25 @@ def kesha_maker(array)
   end
   kesha_array
 end
+
+def find_a(array)
+  array.select do |i|
+    i.start_with?("a")
+  end
+end
+
+def sum_array(array)
+  total = 0
+  array.each { |i| total += i }
+  total
+end
+
+def add_s(array)
+  array_plurals = []
+  x = array[1]
+  array.slice!(1)
+  array.each do |i|
+    array_plurals << (i << "s")
+  end
+  array_plurals.insert(1, x)
+end
