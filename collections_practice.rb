@@ -48,7 +48,11 @@ def sum_array(array)
 end
 
 def add_s(array)
+  array_plurals = []
   x = array[1]
   array.slice!(1)
-  array
+  array.each do |i|
+    array_plurals << (i << "s")
+  end
+  end
 end
